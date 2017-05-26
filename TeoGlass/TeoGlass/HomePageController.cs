@@ -20,8 +20,10 @@ namespace TeoGlass
             logoImageIphone.Image = UIImage.FromFile("Images/inglassLogo.png");
             Packing.BackgroundColor = UIColor.Blue;
             Packing.SetTitleColor(UIColor.White, UIControlState.Normal);
+            Packing.Layer.CornerRadius = 10;
             Tests.BackgroundColor = UIColor.Blue;
             Tests.SetTitleColor(UIColor.White, UIControlState.Normal);
+            Tests.Layer.CornerRadius = 10;
         }
 
 
