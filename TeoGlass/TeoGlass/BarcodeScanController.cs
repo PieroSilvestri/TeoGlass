@@ -3,6 +3,8 @@ using System;
 using Plugin.Media;
 using UIKit;
 using Plugin.Media.Abstractions;
+using ZXing.Mobile;
+using System.IO;
 
 namespace TeoGlass
 {
@@ -26,6 +28,7 @@ namespace TeoGlass
 			{
 				BarcodeImage.Image = UIImage.FromFile(ImagePassed.Path);
 			}
+			//OkButton.TouchUpInside += ScannerEvent;
 		}
 
 		public override void DidReceiveMemoryWarning()
