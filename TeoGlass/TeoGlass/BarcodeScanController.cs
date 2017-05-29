@@ -46,6 +46,5 @@ namespace TeoGlass
 
 			BarcodeImage.Image = UIImage.FromFile(image.Path);
 		}
-
-    }
+	}
 }
