@@ -41,5 +41,13 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>CFBundleName</key>
+	<string>TeoGlass</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app require Photo Library Usage.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This app require Microphone Usage.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This app require Camera Usage.</string>
 </dict>
 </plist>

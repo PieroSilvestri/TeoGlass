@@ -97,6 +97,16 @@
     <Compile Include="PackingPageController.designer.cs">
       <DependentUpon>PackingPageController.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainMenuController.cs" />
+    <Compile Include="MainMenuController.designer.cs">
+      <DependentUpon>MainMenuController.cs</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <Compile Include="ViewModel\PhotoEvents.cs" />
+    <Compile Include="BarcodeScanController.cs" />
+    <Compile Include="BarcodeScanController.designer.cs">
+      <DependentUpon>BarcodeScanController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ViewController.designer.cs">
@@ -111,12 +121,22 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="Plugin.Media.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Media.2.6.2\lib\Xamarin.iOS10\Plugin.Media.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Media">
+      <HintPath>..\packages\Xam.Plugin.Media.2.6.2\lib\Xamarin.iOS10\Plugin.Media.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Entitlements.plist" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Images\inglassLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="ViewModel\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
