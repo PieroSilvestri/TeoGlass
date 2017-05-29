@@ -9,7 +9,6 @@ namespace TeoGlass
         public HomePageController (IntPtr handle) : base (handle)
         {
             
-
         }
 
         public override void ViewDidLoad()

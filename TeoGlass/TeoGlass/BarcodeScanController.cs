@@ -2,6 +2,7 @@ using Foundation;
 using System;
 using Plugin.Media;
 using UIKit;
+using Plugin.Media.Abstractions;
 
 namespace TeoGlass
 {
@@ -10,6 +11,7 @@ namespace TeoGlass
 
 		private PhotoEvents _photoEvents;
 		UIAlertController alertView;
+		public MediaFile ImagePassed { get; set; }
 
 		public BarcodeScanController(IntPtr handle) : base(handle)
 		{
@@ -19,8 +21,11 @@ namespace TeoGlass
 		{
 			base.ViewDidLoad();
 			_photoEvents = new PhotoEvents();
-			// Perform any additional setup after loading the view, typically from a nib.
-			OkButton.TouchUpInside += PickPhoto;
+			// Perform any additional setup after loading the view, typically from a nib
+			if (ImagePassed != null)
+			{
+				BarcodeImage.Image = UIImage.FromFile(ImagePassed.Path);
+			}
 		}
 
 		public override void DidReceiveMemoryWarning()
@@ -36,7 +41,7 @@ namespace TeoGlass
 			if (image == null)
 			{
 				alertView = UIAlertController.Create("Camera Error", "Camera is not available on this device.", UIAlertControllerStyle.Alert);
-				alertView.AddAction(UIAlertAction.Create("Ok", UIAlertActionStyle.Default, null));;
+				alertView.AddAction(UIAlertAction.Create("Ok", UIAlertActionStyle.Default, null)); ;
 
 				// Present Alert
 				PresentViewController(alertView, true, null);
