@@ -1,11 +1,15 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="13">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomePageController" sceneMemberID="viewController">
@@ -20,13 +24,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
 >>>>>>> parent of 59801d7... Eccoci
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="34" translatesAutoresizingMaskIntoConstraints="NO">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="34">
                                 <rect key="frame" x="259" y="83" width="150" height="150"/>
                                 <constraints>
-                                    <constraint id="366" firstAttribute="width" constant="150"/>
-                                    <constraint id="367" firstAttribute="height" constant="150"/>
+                                    <constraint firstAttribute="width" constant="150" id="366"/>
+                                    <constraint firstAttribute="height" constant="150" id="367"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -41,21 +44,21 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="37" translatesAutoresizingMaskIntoConstraints="NO" buttonType="roundedRect">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37">
                                 <rect key="frame" x="295" y="252" width="78" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Packing">
+                                    <color key="titleColor" red="0.0" green="0.52549019607843139" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleColor" colorSpace="calibratedRGB" red="0" green="0.52549019607843139" blue="1" alpha="1"/>
                                 </state>
-                                <connections/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="38" translatesAutoresizingMaskIntoConstraints="NO" horizontalHuggingPriority="1">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38">
                                 <rect key="frame" x="259" y="320" width="150" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Tests">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+<<<<<<< Updated upstream
                                 <variation key="heightClass=compact-widthClass=compact" misplaced="YES"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="51" translatesAutoresizingMaskIntoConstraints="NO">
@@ -63,6 +66,14 @@
                                 <constraints>
                                     <constraint id="462" firstAttribute="width" constant="393"/>
                                     <constraint id="463" firstAttribute="height" constant="150"/>
+=======
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="51">
+                                <rect key="frame" x="337" y="84" width="350" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="420"/>
+                                    <constraint firstAttribute="height" constant="350" id="421"/>
+>>>>>>> Stashed changes
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -77,17 +88,28 @@
                                     </mask>
                                 </variation>
                             </imageView>
+<<<<<<< Updated upstream
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="54" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="270" y="345" width="484" height="80"/>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54">
+                                <rect key="frame" x="337" y="474" width="350" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="430"/>
+                                </constraints>
+>>>>>>> Stashed changes
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Packing">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+<<<<<<< Updated upstream
                                 <constraints>
                                     <constraint id="476" firstItem="54" firstAttribute="height" constant="54">
                                         <variation key="heightClass=regular-widthClass=regular" constant="80"/>
                                     </constraint>
                                 </constraints>
+=======
+>>>>>>> Stashed changes
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="476"/>
@@ -105,8 +127,13 @@
 =======
 >>>>>>> parent of 59801d7... Eccoci
                             </button>
+<<<<<<< Updated upstream
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="55" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="270" y="475" width="484" height="80"/>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55">
+                                <rect key="frame" x="337" y="617" width="350" height="54"/>
+>>>>>>> Stashed changes
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Tests">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -128,6 +155,25 @@
                                 </variation>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="34" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="364"/>
+                            <constraint firstItem="34" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="83" id="365"/>
+                            <constraint firstItem="38" firstAttribute="width" secondItem="34" secondAttribute="width" id="402"/>
+                            <constraint firstItem="38" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="403"/>
+                            <constraint firstItem="37" firstAttribute="width" secondItem="34" secondAttribute="width" id="409"/>
+                            <constraint firstItem="51" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="84" id="418"/>
+                            <constraint firstItem="51" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="419"/>
+                            <constraint firstItem="54" firstAttribute="width" secondItem="51" secondAttribute="width" id="424"/>
+                            <constraint firstItem="37" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="252" id="425"/>
+                            <constraint firstAttribute="trailing" secondItem="37" secondAttribute="trailing" constant="473" id="426"/>
+                            <constraint firstItem="54" firstAttribute="centerX" secondItem="37" secondAttribute="centerX" id="427"/>
+                            <constraint firstAttribute="bottom" secondItem="54" secondAttribute="bottom" constant="240" id="428"/>
+                            <constraint firstItem="54" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="429"/>
+                            <constraint firstItem="55" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="432"/>
+                            <constraint firstItem="55" firstAttribute="width" secondItem="51" secondAttribute="width" id="433"/>
+                            <constraint firstItem="55" firstAttribute="top" secondItem="54" secondAttribute="bottom" constant="89" id="434"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="34"/>
@@ -140,8 +186,12 @@
                             <mask key="constraints">
                                 <exclude reference="364"/>
                                 <exclude reference="365"/>
+                                <exclude reference="409"/>
+                                <exclude reference="425"/>
+                                <exclude reference="426"/>
                                 <exclude reference="402"/>
                                 <exclude reference="403"/>
+<<<<<<< Updated upstream
                                 <exclude reference="409"/>
                                 <exclude reference="425"/>
                                 <exclude reference="426"/>
@@ -153,6 +203,17 @@
                                 <exclude reference="478"/>
                                 <exclude reference="479"/>
                                 <exclude reference="480"/>
+=======
+                                <exclude reference="418"/>
+                                <exclude reference="419"/>
+                                <exclude reference="424"/>
+                                <exclude reference="427"/>
+                                <exclude reference="428"/>
+                                <exclude reference="429"/>
+                                <exclude reference="432"/>
+                                <exclude reference="433"/>
+                                <exclude reference="434"/>
+>>>>>>> Stashed changes
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -164,11 +225,12 @@
                             <mask key="constraints">
                                 <include reference="364"/>
                                 <include reference="365"/>
+                                <include reference="409"/>
                                 <include reference="402"/>
                                 <include reference="403"/>
-                                <include reference="409"/>
                             </mask>
                         </variation>
+<<<<<<< Updated upstream
                         <constraints>
                             <constraint id="364" firstItem="34" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
                             <constraint id="365" firstItem="34" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="83"/>
@@ -194,6 +256,8 @@
                                 <variation key="heightClass=regular-widthClass=regular" constant="250"/>
                             </constraint>
                         </constraints>
+=======
+>>>>>>> Stashed changes
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="subviews">
                                 <include reference="51"/>
@@ -203,6 +267,7 @@
                             <mask key="constraints">
                                 <include reference="425"/>
                                 <include reference="426"/>
+<<<<<<< Updated upstream
                                 <include reference="461"/>
                                 <include reference="464"/>
                                 <include reference="468"/>
@@ -211,18 +276,27 @@
                                 <include reference="478"/>
                                 <include reference="479"/>
                                 <include reference="480"/>
+=======
+                                <include reference="418"/>
+                                <include reference="419"/>
+                                <include reference="424"/>
+                                <include reference="427"/>
+                                <include reference="428"/>
+                                <include reference="429"/>
+                                <include reference="432"/>
+                                <include reference="433"/>
+                                <include reference="434"/>
+>>>>>>> Stashed changes
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Home" id="235"/>
                     <connections>
-                        <outlet property="Packing" destination="37" id="name-outlet-37"/>
-                        <outlet property="Tests" destination="38" id="name-outlet-38"/>
                         <outlet property="Packing" destination="54" id="name-outlet-54"/>
                         <outlet property="Tests" destination="55" id="name-outlet-55"/>
                         <outlet property="logoImage" destination="51" id="name-outlet-51"/>
                         <outlet property="logoImageIphone" destination="34" id="name-outlet-34"/>
                     </connections>
-                    <navigationItem title="Home" id="235" key="navigationItem"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -232,6 +306,126 @@
             <point key="canvasLocation" x="-393" y="0.0"/>
 >>>>>>> parent of 59801d7... Eccoci
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Hox-rf-RCQ">
+            <objects>
+                <viewController id="O21-Gn-CFF" sceneMemberID="viewController" customClass="PackingPageController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ufe-Oq-cXq"/>
+                        <viewControllerLayoutGuide type="bottom" id="14G-es-Qtc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ctZ-Q0-FQo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ur-Aq-Hed">
+                                <rect key="frame" x="10" y="74" width="580" height="82"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bMW-wt-t8a">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="82"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gph-WF-liF">
+                                        <rect key="frame" x="290" y="0.0" width="290" height="82"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ExJ-ti-zUN" fixedFrame="YES">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="82"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Packing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHo-gd-Bfy" fixedFrame="YES">
+                                                <rect key="frame" x="150" y="0.0" width="140" height="82"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="57"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gph-WF-liF" firstAttribute="width" secondItem="bMW-wt-t8a" secondAttribute="width" id="fVt-gQ-6Ft"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H123456.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ev9-WZ-Wnc">
+                                <rect key="frame" x="10" y="181" width="580" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="a7O-ar-egK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sZu-dy-1Zz">
+                                <rect key="frame" x="10" y="462" width="580" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3g-Gc-kSa" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="0.0" width="277" height="128"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="CANCEL">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaW-qu-vY6" misplaced="YES">
+                                        <rect key="frame" x="297" y="0.0" width="128" height="128"/>
+                                        <color key="backgroundColor" red="1" green="0.89833508875716073" blue="0.088126788855600657" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="SEND">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVh-q4-tJA" misplaced="YES">
+                                        <rect key="frame" x="512" y="0.0" width="236" height="128"/>
+                                        <color key="backgroundColor" red="0.53762734831284853" green="0.83428364082827222" blue="0.27530371569047613" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="DONE">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="EaW-qu-vY6" firstAttribute="width" secondItem="Y3g-Gc-kSa" secondAttribute="width" id="Gzt-fe-gd1"/>
+                                    <constraint firstItem="rVh-q4-tJA" firstAttribute="width" secondItem="Y3g-Gc-kSa" secondAttribute="width" id="KYG-xw-jcE"/>
+                                    <constraint firstAttribute="height" constant="128" id="TPV-6m-6fP"/>
+                                </constraints>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mqz-dd-9ko">
+                                <rect key="frame" x="10" y="266" width="580" height="186"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="w3L-TG-LNY">
+                                        <rect key="frame" x="0.0" y="28" width="580" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w3L-TG-LNY" id="waf-Bq-xPJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="580" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Mqz-dd-9ko" secondAttribute="trailing" constant="10" id="NAn-zC-IlZ"/>
+                            <constraint firstItem="Mqz-dd-9ko" firstAttribute="top" secondItem="Ev9-WZ-Wnc" secondAttribute="bottom" constant="10" id="TFk-Km-vsW"/>
+                            <constraint firstItem="sZu-dy-1Zz" firstAttribute="top" secondItem="Mqz-dd-9ko" secondAttribute="bottom" constant="10" id="VzN-Nv-gzR"/>
+                            <constraint firstItem="2Ur-Aq-Hed" firstAttribute="leading" secondItem="ctZ-Q0-FQo" secondAttribute="leading" constant="10" id="YE2-Vf-pPZ"/>
+                            <constraint firstItem="sZu-dy-1Zz" firstAttribute="leading" secondItem="ctZ-Q0-FQo" secondAttribute="leading" constant="10" id="ZIV-cJ-c3g"/>
+                            <constraint firstItem="2Ur-Aq-Hed" firstAttribute="top" secondItem="Ufe-Oq-cXq" secondAttribute="bottom" constant="10" id="aFf-JL-hWH"/>
+                            <constraint firstAttribute="trailing" secondItem="sZu-dy-1Zz" secondAttribute="trailing" constant="10" id="cPO-hv-cmE"/>
+                            <constraint firstItem="Ev9-WZ-Wnc" firstAttribute="leading" secondItem="ctZ-Q0-FQo" secondAttribute="leading" constant="10" id="dpA-3A-hIB"/>
+                            <constraint firstAttribute="trailing" secondItem="2Ur-Aq-Hed" secondAttribute="trailing" constant="10" id="fPs-g2-Ljr"/>
+                            <constraint firstItem="Mqz-dd-9ko" firstAttribute="leading" secondItem="ctZ-Q0-FQo" secondAttribute="leading" constant="10" id="r3b-ur-ekC"/>
+                            <constraint firstAttribute="trailing" secondItem="Ev9-WZ-Wnc" secondAttribute="trailing" constant="10" id="ti1-j0-Ivn"/>
+                            <constraint firstItem="14G-es-Qtc" firstAttribute="top" secondItem="sZu-dy-1Zz" secondAttribute="bottom" constant="10" id="vAg-R3-OeP"/>
+                            <constraint firstItem="Ev9-WZ-Wnc" firstAttribute="top" secondItem="2Ur-Aq-Hed" secondAttribute="bottom" constant="25" id="w2P-cV-Gcl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Bw-ez-50N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882.6149" y="-5"/>
+        </scene>
+        <!--Navigation Controller-->
         <scene sceneID="12">
             <objects>
                 <navigationController id="13" sceneMemberID="viewController">
@@ -244,7 +438,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue id="236" destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="236"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="16" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -369,11 +563,17 @@
 >>>>>>> parent of 59801d7... Eccoci
         </scene>
     </scenes>
+    <resources>
+        <image name="Images/inglassLogo.png" width="247" height="143"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedScreenMetrics key="destination" type="iPad"/>
         <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
     </simulatedMetricsContainer>
+<<<<<<< Updated upstream
     <resources>
         <image name="Images/inglassLogo.png" width="336" height="128"/>
     </resources>
+=======
+>>>>>>> Stashed changes
 </document>
