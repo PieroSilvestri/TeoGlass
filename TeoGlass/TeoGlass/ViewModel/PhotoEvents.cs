@@ -15,20 +15,23 @@ namespace TeoGlass
 		public async Task<MediaFile> PickPhotoEvent()
 		{
 			await CrossMedia.Current.Initialize();
-
 			if (!CrossMedia.Current.IsPickPhotoSupported)
 				return null;
-			
-
 			var file = await CrossMedia.Current.PickPhotoAsync(new PickMediaOptions());
+			return file;
+		}
 
-			if (file == null)
+		public async Task<MediaFile> GetPhotoEvent()
+		{
+			await CrossMedia.Current.Initialize();
+			if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
 				return null;
-			else
-				return file;
-
-			//ImageBoxView.Image = UIImage.FromFile(file.Path);
-			//ImageBoxView.(
+			var file = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
+			{
+				Directory = "Sample",
+				Name = "test.jpg"
+			});
+			return file;
 		}
 	}
 }
