@@ -18,20 +18,11 @@ namespace TeoGlass
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIImageView BarcodeImage { get; set; }
 
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton OkButton { get; set; }
-
         void ReleaseDesignerOutlets ()
         {
             if (BarcodeImage != null) {
                 BarcodeImage.Dispose ();
                 BarcodeImage = null;
-            }
-
-            if (OkButton != null) {
-                OkButton.Dispose ();
-                OkButton = null;
             }
         }
     }
