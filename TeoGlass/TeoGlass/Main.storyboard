@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="34">
-                                <rect key="frame" x="259" y="83" width="150" height="150"/>
+                                <rect key="frame" x="293" y="83" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="366"/>
                                     <constraint firstAttribute="height" constant="150" id="367"/>
@@ -220,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1463" y="-62"/>
+            <point key="canvasLocation" x="-2148" y="-58"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="12">
@@ -236,7 +236,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="16" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2161" y="-61"/>
+            <point key="canvasLocation" x="-3217" y="-57"/>
         </scene>
         <!--Main Menu Controller-->
         <scene sceneID="490">
@@ -250,13 +250,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="613">
-                                <rect key="frame" x="100" y="294" width="824" height="244"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <state key="normal" title="READ BARCODE">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cei-Uj-vQk">
                                 <rect key="frame" x="10" y="74" width="1004" height="130"/>
                                 <subviews>
@@ -267,63 +260,106 @@
                                         <rect key="frame" x="502" y="0.0" width="502" height="130"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="Packing"/>
+                                        <connections/>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="kcA-A9-FM7" firstAttribute="width" secondItem="BTZ-jj-GRQ" secondAttribute="width" id="F3i-Ju-nZe"/>
                                     <constraint firstAttribute="height" constant="130" id="f8s-LG-cwW"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=regular"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="center" id="728" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="100" y="354" width="824" height="220"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="729" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="-31" y="-4" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="613">
+                                        <rect key="frame" x="0.0" y="0.0" width="824" height="220"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="READ BARCODE">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" colorSpace="calibratedRGB" red="0" green="0.52549019607843139" blue="1" alpha="1"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections/>
+                                    </button>
+                                </subviews>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="613"/>
+                                        <exclude reference="729"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="749"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" distribution="fillProportionally">
+                                    <mask key="subviews">
+                                        <include reference="613"/>
+                                        <include reference="729"/>
+                                    </mask>
+                                    <color key="backgroundColor" colorSpace="calibratedRGB" red="0.50588235294117645" green="0.50588235294117645" blue="0.50588235294117645" alpha="1"/>
+                                    <mask key="constraints">
+                                        <include reference="749"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="749" firstItem="728" firstAttribute="height" constant="100">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="220"/>
+                                    </constraint>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="613" firstAttribute="leading" secondItem="492" secondAttribute="leadingMargin" constant="348" id="614">
-                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
-                            </constraint>
-                            <constraint firstItem="613" firstAttribute="top" secondItem="488" secondAttribute="bottom" constant="270" id="615">
-                                <variation key="heightClass=regular-widthClass=regular" constant="230"/>
-                            </constraint>
-                            <constraint firstAttribute="trailingMargin" secondItem="613" secondAttribute="trailing" constant="862" id="616">
-                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
-                            </constraint>
-                            <constraint firstItem="489" firstAttribute="top" secondItem="613" secondAttribute="bottom" constant="374" id="617">
-                                <variation key="heightClass=regular-widthClass=regular" constant="230"/>
-                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="Cei-Uj-vQk" secondAttribute="trailing" constant="10" id="3ZC-KD-yfA"/>
                             <constraint firstItem="Cei-Uj-vQk" firstAttribute="top" secondItem="488" secondAttribute="bottom" constant="10" id="Dqg-d8-2Fr"/>
                             <constraint firstItem="Cei-Uj-vQk" firstAttribute="leading" secondItem="492" secondAttribute="leading" constant="10" id="fgz-6g-kaB"/>
+                            <constraint id="745" firstItem="728" firstAttribute="centerX" secondItem="492" secondAttribute="centerX"/>
+                            <constraint id="746" firstItem="728" firstAttribute="leading" secondItem="492" secondAttribute="leadingMargin" constant="256">
+                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                            </constraint>
+                            <constraint id="750" firstItem="728" firstAttribute="top" secondItem="Cei-Uj-vQk" secondAttribute="bottom" constant="70">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="613"/>
+                                <exclude reference="728"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="617"/>
-                                <exclude reference="614"/>
-                                <exclude reference="615"/>
-                                <exclude reference="616"/>
+                                <exclude reference="745"/>
+                                <exclude reference="746"/>
+                                <exclude reference="750"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="subviews">
-                                <include reference="613"/>
+                                <include reference="728"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="617"/>
-                                <include reference="614"/>
-                                <include reference="615"/>
-                                <include reference="616"/>
+                                <include reference="745"/>
+                                <include reference="746"/>
+                                <include reference="750"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="ReadBarcodeButton" destination="613" id="name-outlet-613"/>
                         <segue destination="REp-VY-Iu7" kind="show" identifier="GotoBarcodeScan" id="666"/>
+                        <outlet property="ReadBarcodeButton" destination="613" id="name-outlet-613"/>
+                        <outlet property="barcodeClick" destination="728" id="name-outlet-728"/>
+                        <outlet property="codeImage" destination="729" id="name-outlet-729"/>
+                        <outlet property="logoImage2" destination="BTZ-jj-GRQ" id="name-outlet-BTZ-jj-GRQ"/>
+                        <outlet property="PackingButton" destination="kcA-A9-FM7" id="name-outlet-kcA-A9-FM7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="493" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-577" y="-256"/>
+            <point key="canvasLocation" x="-1081" y="-60"/>
         </scene>
         <!--Barcode Scan-->
         <scene sceneID="Aul-AK-R1K">
@@ -356,8 +392,8 @@
                                     <constraint firstAttribute="height" constant="130" id="mrZ-wv-DYu"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8Da-rP-HvQ">
-                                <rect key="frame" x="40" y="564" width="944" height="72"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8Da-rP-HvQ" misplaced="YES">
+                                <rect key="frame" x="30" y="555" width="964" height="72"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Manual Input" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cAK-kb-UDH" fixedFrame="YES">
                                         <rect key="frame" x="0.0" y="0.0" width="855" height="72"/>
@@ -369,19 +405,18 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7k-ME-wKi" misplaced="YES">
                                         <rect key="frame" x="875" y="0.0" width="69" height="72"/>
                                         <color key="backgroundColor" red="0.53762734830000003" green="0.83428364079999995" blue="0.27530371570000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="350" id="ssr-us-7uc"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="OK">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" customColorSpace="sRGB" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
                                             <segue destination="wdF-zP-Bpq" kind="show" id="HK4-jq-sSo"/>
+                                            <action selector="OkButton_TouchUpInside:" destination="REp-VY-Iu7" id="725" eventType="touchUpInside"/>
                                         </connections>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </button>
                                 </subviews>
+                                <variation key="heightClass=regular-widthClass=regular" distribution="fillEqually"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4e-pb-xjC">
                                 <rect key="frame" x="40" y="648" width="400" height="100"/>
@@ -395,27 +430,64 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vQw-M3-dkR">
-                                <rect key="frame" x="40" y="234" width="944" height="300"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vQw-M3-dkR" misplaced="YES">
+                                <rect key="frame" x="30" y="234" width="964" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="VKH-Kj-DQQ"/>
+                                    <constraint id="689" firstAttribute="height" constant="300"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="689"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="689"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="8Da-rP-HvQ" secondAttribute="trailing" constant="40" id="0MM-GE-Bfu"/>
-                            <constraint firstItem="vQw-M3-dkR" firstAttribute="leading" secondItem="Ufb-4x-8dR" secondAttribute="leading" constant="40" id="Arg-YE-aiM"/>
                             <constraint firstAttribute="trailing" secondItem="dvv-Ko-Qc3" secondAttribute="trailing" constant="10" id="Ehr-fc-m10"/>
-                            <constraint firstItem="8Da-rP-HvQ" firstAttribute="top" secondItem="vQw-M3-dkR" secondAttribute="bottom" constant="20" id="H3B-gZ-thV"/>
                             <constraint firstItem="4ls-WV-HQW" firstAttribute="top" secondItem="i4e-pb-xjC" secondAttribute="bottom" constant="20" id="JYf-ja-LnV"/>
                             <constraint firstItem="dvv-Ko-Qc3" firstAttribute="leading" secondItem="Ufb-4x-8dR" secondAttribute="leading" constant="10" id="ObK-hY-IJc"/>
                             <constraint firstItem="dvv-Ko-Qc3" firstAttribute="top" secondItem="1v0-dH-z65" secondAttribute="bottom" constant="10" id="UK6-ch-yAU"/>
-                            <constraint firstAttribute="trailing" secondItem="vQw-M3-dkR" secondAttribute="trailing" constant="40" id="YyQ-1H-dSX"/>
                             <constraint firstItem="i4e-pb-xjC" firstAttribute="leading" secondItem="Ufb-4x-8dR" secondAttribute="leading" constant="40" id="i4p-gw-Lpb"/>
-                            <constraint firstItem="8Da-rP-HvQ" firstAttribute="leading" secondItem="Ufb-4x-8dR" secondAttribute="leading" constant="40" id="tSU-GJ-msc"/>
-                            <constraint firstItem="vQw-M3-dkR" firstAttribute="top" secondItem="dvv-Ko-Qc3" secondAttribute="bottom" constant="40" id="vwf-o1-zhq"/>
+                            <constraint id="686" firstItem="vQw-M3-dkR" firstAttribute="leading" secondItem="Ufb-4x-8dR" secondAttribute="leading" constant="30"/>
+                            <constraint id="687" firstItem="Ufb-4x-8dR" firstAttribute="bottom" secondItem="vQw-M3-dkR" secondAttribute="bottom" constant="234"/>
+                            <constraint id="698" firstItem="8Da-rP-HvQ" firstAttribute="leading" secondItem="Ufb-4x-8dR" secondAttribute="leadingMargin" constant="135">
+                                <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                            </constraint>
+                            <constraint id="699" firstItem="Ufb-4x-8dR" firstAttribute="trailingMargin" secondItem="8Da-rP-HvQ" secondAttribute="trailing" constant="258">
+                                <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                            </constraint>
+                            <constraint id="700" firstItem="Ufb-4x-8dR" firstAttribute="trailingMargin" secondItem="vQw-M3-dkR" secondAttribute="trailing" constant="34">
+                                <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                            </constraint>
+                            <constraint id="701" firstItem="8Da-rP-HvQ" firstAttribute="top" secondItem="vQw-M3-dkR" secondAttribute="bottom" constant="21"/>
+                            <constraint id="710" firstItem="8Da-rP-HvQ" firstAttribute="width" secondItem="vQw-M3-dkR" secondAttribute="width"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="686"/>
+                                <exclude reference="687"/>
+                                <exclude reference="698"/>
+                                <exclude reference="699"/>
+                                <exclude reference="700"/>
+                                <exclude reference="701"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="686"/>
+                                <include reference="687"/>
+                                <include reference="698"/>
+                                <include reference="699"/>
+                                <include reference="700"/>
+                                <include reference="701"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Barcode Scan" id="L4O-xb-4lY"/>
                     <connections>
@@ -425,7 +497,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BdT-3k-OgV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="165.8203" y="-256.0761"/>
+            <point key="canvasLocation" x="117.8203" y="-197.0761"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="of4-s8-4vD">
@@ -465,7 +537,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZP-rn-aiA">
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZP-rn-aiA" distribution="fillEqually">
                                 <rect key="frame" x="20" y="648" width="984" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qld-TD-Bbs" misplaced="YES">
@@ -595,7 +667,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7mg-ai-nRW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="853" y="-256"/>
+            <point key="canvasLocation" x="1205" y="-182"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="21k-jT-0Og">

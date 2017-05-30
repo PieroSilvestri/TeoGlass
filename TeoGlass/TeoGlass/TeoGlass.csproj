@@ -154,13 +154,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Entitlements.plist" />
+    <BundleResource Include="Images\pin.png" />
+    <BundleResource Include="Images\codeReader.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Images\inglassLogo.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="ViewModel\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
