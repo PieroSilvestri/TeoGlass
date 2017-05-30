@@ -270,14 +270,14 @@
                                 <variation key="heightClass=regular-widthClass=regular"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="center" id="728" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="100" y="354" width="824" height="220"/>
+                                <rect key="frame" x="100" y="354" width="0.0" height="0.0"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="729" translatesAutoresizingMaskIntoConstraints="NO">
-                                        <rect key="frame" x="-31" y="-4" width="240" height="128"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="729" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                        <rect key="frame" x="-100" y="-354" width="0.0" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="613">
-                                        <rect key="frame" x="0.0" y="0.0" width="824" height="220"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="613" fixedFrame="YES">
+                                        <rect key="frame" x="-100" y="-354" width="0.0" height="128"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="READ BARCODE">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -396,14 +396,14 @@
                                 <rect key="frame" x="30" y="555" width="964" height="72"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Manual Input" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cAK-kb-UDH" fixedFrame="YES">
-                                        <rect key="frame" x="0.0" y="0.0" width="855" height="72"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="875" height="72"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7k-ME-wKi" misplaced="YES">
-                                        <rect key="frame" x="875" y="0.0" width="69" height="72"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7k-ME-wKi" fixedFrame="YES">
+                                        <rect key="frame" x="895" y="0.0" width="69" height="72"/>
                                         <color key="backgroundColor" red="0.53762734830000003" green="0.83428364079999995" blue="0.27530371570000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="OK">
@@ -411,7 +411,6 @@
                                         </state>
                                         <connections>
                                             <segue destination="wdF-zP-Bpq" kind="show" id="HK4-jq-sSo"/>
-                                            <action selector="OkButton_TouchUpInside:" destination="REp-VY-Iu7" id="725" eventType="touchUpInside"/>
                                         </connections>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </button>
@@ -540,18 +539,18 @@
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZP-rn-aiA" distribution="fillEqually">
                                 <rect key="frame" x="20" y="648" width="984" height="100"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qld-TD-Bbs" misplaced="YES">
-                                        <rect key="frame" x="0.0" y="0.0" width="721" height="100"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qld-TD-Bbs">
+                                        <rect key="frame" x="0.0" y="0.0" width="328" height="100"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="CANCEL"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwE-GR-Hfi" misplaced="YES">
-                                        <rect key="frame" x="721" y="0.0" width="128" height="100"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwE-GR-Hfi">
+                                        <rect key="frame" x="328" y="0.0" width="328" height="100"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="SEND"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEl-Ai-8Gs" misplaced="YES">
-                                        <rect key="frame" x="849" y="0.0" width="135" height="100"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEl-Ai-8Gs">
+                                        <rect key="frame" x="656" y="0.0" width="328" height="100"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="DONE"/>
                                     </button>
@@ -812,6 +811,8 @@
     </scenes>
     <resources>
         <image name="Images/inglassLogo.png" width="336" height="128"/>
+        <image name="Images/pin.png" width="1600" height="1600"/>
+        <image name="Images/codeReader.png" width="300" height="300"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedScreenMetrics key="destination" type="iPad"/>
