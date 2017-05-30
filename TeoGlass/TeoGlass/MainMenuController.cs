@@ -22,11 +22,37 @@ namespace TeoGlass
 		{
 			base.ViewDidLoad();
 			_photoEvents = new PhotoEvents();
-			// Perform any additional setup after loading the view, typically from a nib.
-			ReadBarcodeButton.TouchUpInside += PickPhoto;
-		}
+            logoImage2.Image = UIImage.FromFile("Images/inglassLogo.png");
+            ReadBarcodeButton.TouchUpInside += PickPhoto;
+            codeImage.Image = UIImage.FromFile("Images/codeReader.png");
+            barcodeClick.UserInteractionEnabled = true;
+            PackingButton.Layer.BorderColor = UIColor.Black.CGColor;
+            PackingButton.Layer.BorderWidth = 2;
+            AddTapGesture();
+            
+        }
 
-		public override void DidReceiveMemoryWarning()
+        private void AddTapGesture()
+        {
+
+            var tapGesture = new UITapGestureRecognizer(ImageTrigger)
+            {
+                NumberOfTapsRequired = 1 // change number as you want 
+            };
+            barcodeClick.AddGestureRecognizer(tapGesture);
+        }
+
+        public void ImageTrigger(UIGestureRecognizer sender)
+        {
+            PickPhoto(sender, null);
+            System.Diagnostics.Debug.WriteLine("Button Clicked");
+        }
+
+
+
+
+
+        public override void DidReceiveMemoryWarning()
 		{
 			base.DidReceiveMemoryWarning();
 			// Release any cached data, images, etc that aren't in us   }
@@ -64,5 +90,6 @@ namespace TeoGlass
 				}
 			}
 		}
-	}
+
+    }
 }

@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="34">
-                                <rect key="frame" x="259" y="83" width="150" height="150"/>
+                                <rect key="frame" x="293" y="83" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="366"/>
                                     <constraint firstAttribute="height" constant="150" id="367"/>
@@ -250,13 +250,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="613">
-                                <rect key="frame" x="100" y="294" width="824" height="244"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <state key="normal" title="READ BARCODE">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cei-Uj-vQk">
                                 <rect key="frame" x="10" y="74" width="1004" height="130"/>
                                 <subviews>
@@ -267,58 +260,101 @@
                                         <rect key="frame" x="502" y="0.0" width="502" height="130"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="Packing"/>
+                                        <connections/>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="kcA-A9-FM7" firstAttribute="width" secondItem="BTZ-jj-GRQ" secondAttribute="width" id="F3i-Ju-nZe"/>
                                     <constraint firstAttribute="height" constant="130" id="f8s-LG-cwW"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=regular"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="center" id="728" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="100" y="354" width="824" height="220"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="729" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="-31" y="-4" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="613">
+                                        <rect key="frame" x="0.0" y="0.0" width="824" height="220"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="READ BARCODE">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" colorSpace="calibratedRGB" red="0" green="0.52549019607843139" blue="1" alpha="1"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections/>
+                                    </button>
+                                </subviews>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="613"/>
+                                        <exclude reference="729"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="749"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" distribution="fillProportionally">
+                                    <mask key="subviews">
+                                        <include reference="613"/>
+                                        <include reference="729"/>
+                                    </mask>
+                                    <color key="backgroundColor" colorSpace="calibratedRGB" red="0.50588235294117645" green="0.50588235294117645" blue="0.50588235294117645" alpha="1"/>
+                                    <mask key="constraints">
+                                        <include reference="749"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="749" firstItem="728" firstAttribute="height" constant="100">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="220"/>
+                                    </constraint>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="613" firstAttribute="leading" secondItem="492" secondAttribute="leadingMargin" constant="348" id="614">
-                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
-                            </constraint>
-                            <constraint firstItem="613" firstAttribute="top" secondItem="488" secondAttribute="bottom" constant="270" id="615">
-                                <variation key="heightClass=regular-widthClass=regular" constant="230"/>
-                            </constraint>
-                            <constraint firstAttribute="trailingMargin" secondItem="613" secondAttribute="trailing" constant="862" id="616">
-                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
-                            </constraint>
-                            <constraint firstItem="489" firstAttribute="top" secondItem="613" secondAttribute="bottom" constant="374" id="617">
-                                <variation key="heightClass=regular-widthClass=regular" constant="230"/>
-                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="Cei-Uj-vQk" secondAttribute="trailing" constant="10" id="3ZC-KD-yfA"/>
                             <constraint firstItem="Cei-Uj-vQk" firstAttribute="top" secondItem="488" secondAttribute="bottom" constant="10" id="Dqg-d8-2Fr"/>
                             <constraint firstItem="Cei-Uj-vQk" firstAttribute="leading" secondItem="492" secondAttribute="leading" constant="10" id="fgz-6g-kaB"/>
+                            <constraint id="745" firstItem="728" firstAttribute="centerX" secondItem="492" secondAttribute="centerX"/>
+                            <constraint id="746" firstItem="728" firstAttribute="leading" secondItem="492" secondAttribute="leadingMargin" constant="256">
+                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                            </constraint>
+                            <constraint id="750" firstItem="728" firstAttribute="top" secondItem="Cei-Uj-vQk" secondAttribute="bottom" constant="70">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="613"/>
+                                <exclude reference="728"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="617"/>
-                                <exclude reference="614"/>
-                                <exclude reference="615"/>
-                                <exclude reference="616"/>
+                                <exclude reference="745"/>
+                                <exclude reference="746"/>
+                                <exclude reference="750"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="subviews">
-                                <include reference="613"/>
+                                <include reference="728"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="617"/>
-                                <include reference="614"/>
-                                <include reference="615"/>
-                                <include reference="616"/>
+                                <include reference="745"/>
+                                <include reference="746"/>
+                                <include reference="750"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="ReadBarcodeButton" destination="613" id="name-outlet-613"/>
                         <segue destination="REp-VY-Iu7" kind="show" identifier="GotoBarcodeScan" id="666"/>
+                        <outlet property="ReadBarcodeButton" destination="613" id="name-outlet-613"/>
+                        <outlet property="barcodeClick" destination="728" id="name-outlet-728"/>
+                        <outlet property="codeImage" destination="729" id="name-outlet-729"/>
+                        <outlet property="logoImage2" destination="BTZ-jj-GRQ" id="name-outlet-BTZ-jj-GRQ"/>
+                        <outlet property="PackingButton" destination="kcA-A9-FM7" id="name-outlet-kcA-A9-FM7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="493" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -747,6 +783,8 @@
     </scenes>
     <resources>
         <image name="Images/inglassLogo.png" width="336" height="128"/>
+        <image name="Images/pin.png" width="1600" height="1600"/>
+        <image name="Images/codeReader.png" width="300" height="300"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedScreenMetrics key="destination" type="iPad"/>

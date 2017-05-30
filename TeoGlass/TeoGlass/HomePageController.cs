@@ -17,12 +17,14 @@ namespace TeoGlass
             // Perform any additional setup after loading the view, typically from a nib.
             logoImage.Image = UIImage.FromFile("Images/inglassLogo.png");
             logoImageIphone.Image = UIImage.FromFile("Images/inglassLogo.png");
-            Packing.BackgroundColor = UIColor.Blue;
+            Packing.BackgroundColor = UIColor.FromRGB(236, 27 ,48);
             Packing.SetTitleColor(UIColor.White, UIControlState.Normal);
             Packing.Layer.CornerRadius = 10;
-            Tests.BackgroundColor = UIColor.Blue;
+            Tests.BackgroundColor = UIColor.FromRGB(236, 27, 48);
             Tests.SetTitleColor(UIColor.White, UIControlState.Normal);
             Tests.Layer.CornerRadius = 10;
+
+            
         }
 
         
