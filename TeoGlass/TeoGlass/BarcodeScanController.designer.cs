@@ -22,6 +22,10 @@ namespace TeoGlass
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton OkButton { get; set; }
 
+        [Action ("OkButton_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void OkButton_TouchUpInside (UIKit.UIButton sender);
+
         void ReleaseDesignerOutlets ()
         {
             if (BarcodeImage != null) {
