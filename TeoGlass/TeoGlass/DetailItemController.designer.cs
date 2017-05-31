@@ -16,6 +16,10 @@ namespace TeoGlass
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton CancelButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton DoneButton { get; set; }
 
         [Outlet]
@@ -36,6 +40,11 @@ namespace TeoGlass
 
         void ReleaseDesignerOutlets ()
         {
+            if (CancelButton != null) {
+                CancelButton.Dispose ();
+                CancelButton = null;
+            }
+
             if (DoneButton != null) {
                 DoneButton.Dispose ();
                 DoneButton = null;

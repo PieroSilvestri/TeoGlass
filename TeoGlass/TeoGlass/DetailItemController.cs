@@ -14,7 +14,7 @@ namespace TeoGlass
 		private UIAlertController alertView;
 		private MainViewModel MainViewModel;
 		MediaFile photoMade;
-
+		public string ItemName { get; set; }
 
 		public DetailItemController(IntPtr handle) : base(handle)
 		{
@@ -27,6 +27,7 @@ namespace TeoGlass
 			Title = "Detail Item";
 			PickPhotoButton.TouchUpInside += PickPhoto;
 			DoneButton.TouchUpInside += SendImage;
+			CancelButton.TouchUpInside += GotoBackPage;
 			PhotoEvents = new PhotoEvents();
 			MainViewModel = new MainViewModel();
 		}
@@ -72,6 +73,8 @@ namespace TeoGlass
 
 					alertView = UIAlertController.Create("Send Success", "Image sent correctly.", UIAlertControllerStyle.Alert);
 					alertView.AddAction(UIAlertAction.Create("Ok", UIAlertActionStyle.Default, null));
+					// Present Alert
+					PresentViewController(alertView, true, null);
 
 					var fileManager = NSFileManager.DefaultManager;
 
@@ -93,8 +96,17 @@ namespace TeoGlass
 			{
 				alertView = UIAlertController.Create("Error", "Something went wrong. File not found", UIAlertControllerStyle.Alert);
 				alertView.AddAction(UIAlertAction.Create("Ok", UIAlertActionStyle.Cancel, null));
+				// Present Alert
+				PresentViewController(alertView, true, null);
+			
 			}
 
 		}
+
+		void GotoBackPage(object sender, EventArgs e)
+		{
+			NavigationController.PopViewController(true);
+		}
+
 	}
 }

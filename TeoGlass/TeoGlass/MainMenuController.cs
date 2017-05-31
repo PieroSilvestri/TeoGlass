@@ -24,8 +24,8 @@ namespace TeoGlass
 			_photoEvents = new PhotoEvents();
             logoImage2.Image = UIImage.FromFile("Images/inglassLogo.png");
             ReadBarcodeButton.TouchUpInside += PickPhoto;
-            codeImage.Image = UIImage.FromFile("Images/codeReader.png");
-            barcodeClick.UserInteractionEnabled = true;
+            //codeImage.Image = UIImage.FromFile("Images/codeReader.png");
+            //barcodeClick.UserInteractionEnabled = true;
             PackingButton.Layer.BorderColor = UIColor.Black.CGColor;
             PackingButton.Layer.BorderWidth = 2;
             AddTapGesture();
@@ -39,7 +39,7 @@ namespace TeoGlass
             {
                 NumberOfTapsRequired = 1 // change number as you want 
             };
-            barcodeClick.AddGestureRecognizer(tapGesture);
+            //barcodeClick.AddGestureRecognizer(tapGesture);
         }
 
         public void ImageTrigger(UIGestureRecognizer sender)
